@@ -111,15 +111,23 @@ Create a CSS file (e.g., src/style.css  OR src/index.css) and add:
 /* src/style.css */
 /* src/index.css */
 @import "tailwindcss";
-```
 
-If you prefer the full Tailwind entry, you can use:
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+```
 
 5) Start the dev server
 ```css
@@ -152,3 +160,4 @@ References
 - Tailwind CSS docs: https://tailwindcss.com
 - Vite docs: https://vitejs.dev
 // ...existing code...
+
